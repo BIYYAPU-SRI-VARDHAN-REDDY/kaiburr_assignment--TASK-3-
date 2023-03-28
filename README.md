@@ -41,3 +41,31 @@ For the Java REST API application:
 For the Swagger-generated Java REST API:
 
     docker build -t swagger-java-rest-api-app .
+
+
+
+Step 2: Create Kubernetes YAML manifests
+We will create Kubernetes YAML manifests for the application and MongoDB. We will create two separate YAML files: one for MongoDB and one for the Java REST API application.
+both yaml codes are uploded.
+
+
+Step 3: Deploy MongoDB to the cluster
+We will deploy MongoDB to the cluster using the YAML manifest for MongoDB that
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
