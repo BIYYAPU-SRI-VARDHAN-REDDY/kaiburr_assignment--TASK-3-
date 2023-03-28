@@ -50,7 +50,7 @@ both yaml codes are uploded.
 
 
 Step 3: Deploy MongoDB to the cluster
-We will deploy MongoDB to the cluster using the YAML manifest for MongoDB that
+We will deploy MongoDB to the cluster using the YAML manifest for MongoDB that 
 
 
 
