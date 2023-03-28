@@ -27,27 +27,17 @@ To complete Task 3, we will follow the following steps:
 Step 1: Create Dockerfiles and build Docker images
 We will create Dockerfiles for both the Java REST API application and the Swagger-generated Java REST API. We will use the following Dockerfile for both applications:
 
-bash
-
-FROM openjdk:11-jre-slim
-WORKDIR /app
-COPY target/*.jar /app/app.jar
-CMD ["java", "-jar", "/app/app.jar"]
-
+    FROM openjdk:11-jre-slim
+    WORKDIR /app
+    COPY target/*.jar /app/app.jar
+    CMD ["java", "-jar", "/app/app.jar"]
+    
 Assuming that we have built the applications using Maven and that the compiled JAR files are located in the target directory, we can build the Docker images with the following commands:
 
 For the Java REST API application:
 
-css
-
-docker build -t java-rest-api-app .
+    docker build -t java-rest-api-app .
 
 For the Swagger-generated Java REST API:
 
-css
-
-docker build -t swagger-java-rest-api-app .
-
-Step 2: Create Kubernetes YAML manifests
-We will create Kubernetes YAML manifests for the application and MongoDB. We will create two separate YAML files: one for MongoDB and one for the Java REST API application.
-
+    docker build -t swagger-java-rest-api-app .
